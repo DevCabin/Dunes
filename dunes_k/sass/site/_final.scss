@@ -1,0 +1,67 @@
+// my styles
+/*
+$size__site-main: 790px;
+$size__site-sidebar: 370px;
+*/
+
+.banner {
+	border-top: 8px solid #b39b7c;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+	-o-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+	-ms-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+
+}
+.img-bg {
+	background: url(Dunes_files/images/banner.jpg) no-repeat top center;
+	background-size: cover;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	/* background-position: 34% 100%; */
+	border-top: 8px solid #b39b7c;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+	-o-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+	-ms-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
+	position: relative;
+}
+.tri-shape {
+	width: 376px;
+	height: 96px;
+	position: relative;
+	left: -385px;
+	top: -123px;
+	background: url(Dunes_files/images/tr-shapetop.png) no-repeat;
+	background-size: initial;
+	z-index: 1;
+	display: block;
+}
+.home .tri-shape, .our-services .tri-shape {
+  width: 376px;
+	height: 96px;
+	position: absolute;
+	left: 25px;
+	top: -8px;
+	background: url(Dunes_files/images/tr-shapetop.png) no-repeat;
+	background-size: contain;
+}
+
+
+
+.img-bg p {
+  color : white;
+}
+
+#primary {
+  width: $size__site-main;
+  float: right;
+  padding-top: 115px;
+}
+#secondary {
+  width: $size__site-sidebar;
+  float: left;
+  padding-top: 115px;
+}

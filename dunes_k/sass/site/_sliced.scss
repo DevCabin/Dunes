@@ -1,0 +1,335 @@
+/*====================================== reset.css is here ========================================*/
+*{margin:0; padding:0; box-sizing:border-box; }
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal; font-weight:normal; }
+ol,ul { list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {	font-size:100%;	font-weight:bold;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+.clear{clear:both; font-size:1px;line-height:1px; display:block; height:0;}
+.clearfix:after{content:"";display:block;clear:both;}
+.last	{margin:0 !important;}
+.pad_last{padding:0 !important;}
+.no_bg {background:none !important;}
+.no_bor{border:0 none !important; }
+header,nav,section,article,aside,footer,hgroup,figure {display: block; }
+/**************************************************************************************/
+a {color:#000; text-decoration:none; outline:0 none !important; }
+a:hover, a:focus {color:#000;  text-decoration:none; outline:0 none !important;}
+h1 {font-size:24px;}
+h2 {font-size:22px;}
+h3 {font-size:18px;}
+h4 {font-size:16px;}
+h5 {font-size:14px;}
+h6 {font-size:12px;}
+h1{font-size:20.83px;line-height: 22px;color:#d8c7a0;font-family:"Arial";font-weight:700;padding:0 0 3px 0;}
+p{font-size:14.58px;line-height: 16px;font-family:'Source Serif Pro', serif;font-weight:600;color:#821523;}
+h2{font-size:20.83px;line-height: 22px;color:#d8c7a0;font-family:"Arial";font-weight:700;color:#d8c7a0;}
+
+/*---------------------------------------------------*/
+html {}
+body {color:#b1b1b1; font-family:'Source Serif Pro', serif;font-size:12px;color:#fff;}
+.flt_lt {float:left; display:inline;}
+.flt_rt {float:right; display:inline;}
+
+/*-----------LayOut Start here-----------------------*/
+.wrapper									{margin:0 auto;overflow: hidden;}
+.container									{max-width:1201px; margin:0 auto;}
+/* -- -header starts here --- */
+header{ }
+.header-in{position:  relative;}
+.logo{position:  absolute;top: 8px;left: 91px;z-index: 2;}
+.logo a{display: inline-block;}
+.logo a img{max-width: 100%;height:auto;display: block;}
+.header-rt{float:right;}
+nav{padding: 44px 0 36px 0;float:right;}
+nav ul{margin: 0;}
+nav ul li{float:left;margin: 0  0 0 21px;}
+nav ul li a{font-size:18.75px;line-height: 20px;font-weight:600;color:#821523;text-transform: capitalize;}
+nav ul li a.active{text-decoration:underline;color:#821523;}
+nav ul li a:hover,a:focus{text-decoration: underline;color:#821523;}
+/* - -  banner starts -- -here--*/
+.banner{}
+.banner {
+    background: url(Dunes_files/images/banner.jpg) no-repeat top center;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* background-position: 34% 100%; */
+    border-top: 7px solid #b39b7c;
+
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.9) inset;
+    -o-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.9) inset;
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.9) inset;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.9) inset;
+    -ms-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.9) inset;
+    position:relative;
+}
+.banner .container{position: relative;}
+.banner-cnt{padding: 159px 0 170px 20px;max-width: 768px;margin:0 auto;}
+.banner-cnt p{color:#fff;line-height: 20px;}
+
+
+.tri-shape {
+    width: 350px;
+    height: 109px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    background: url(Dunes_files/images/tr-shapetop.png) no-repeat;
+    background-size: contain;
+}
+
+
+.tri-shape-bt {
+    width: 2000px;
+    height: 108px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: url(Dunes_files/images/banner-bottom.png) no-repeat;
+    background-size: contain;
+    }
+
+
+.tri-shape-bt:after {
+    content: "";
+    width: 1005%;
+    height: 11px;
+    /* background: #fff;*/
+    top: 100%;
+    right: 98%;
+    position: absolute;
+    box-shadow: 0px 6px 17px -4px rgba(0,0,0,0.9);
+    margin: -24px 0 0 0;
+    }
+.tri-shape-bt:before {
+    content: "";
+    width: 1005%;
+    height: 11px;
+     /*background: #fff;*/
+    top: 100%;
+    left: 90%;
+    position: absolute;
+
+    margin: -24px 0 0 0;
+}
+/*--- main -content starts here --- */
+.main-content{}
+.main-blk{padding: 38px 25px 49px 25px;}
+.surgical-main ul{margin: 0 -20px 0 -20px;}
+.surgical-main ul > li{width:33%;display: inline-block;vertical-align: top;padding:0 25px 0 25px;}
+.surgical-blk{padding:0 0 50px 0;text-align: center;}
+.eclipse{display: inline-block;}
+.eclipse figure img{max-width:100%;display: block;height:auto;margin:0 auto;border-radius:100%;}
+.surgical-in p{line-height: 21px;}
+.surgical-in h2{line-height: 26px;}
+.surgical-in{padding: 18px 0 0 0;}
+.surgical-in p span{font-style:italic;display: block;padding: 0px 0 0px 0;}
+.surgical-in .biospy{margin:0;}
+.surgical-in .biospy li {margin:0;float: none;display: block;width: 100%;padding: 5px 0 5px 0;}
+.surgical-in .biospy li a {font-size:14.58px;line-height: 16px;font-weight:600;color:#821523;display: inline-block;}
+.education{padding: 25px 0 0 1px;}
+.education p{letter-spacing: -0.2px;padding: 0 0  3px 3px;}
+.education h2{padding: 0 0 4px 4px;letter-spacing: 0.5px;}
+.education ul{padding: 10px 0 0 0;margin: 0;}
+.education ul > li{display: block;position: relative;padding:0 0 0px 12px;width: auto;}
+.education ul li a{font-size:14.58px;line-height: 20px;font-family:'Source Serif Pro', serif;font-weight:600;color:#821523;}
+.education ul li:before{content:'';display: block;background:#780e17;position:absolute;width:4px;height:4px;border-radius:100%;left:3px;top:7px;}
+.shape{min-height:154px;position:relative;border-top: 7px solid #b39b7c;border-bottom: 7px solid #b39b7c;background-color:#821523;box-shadow:0px 0px 12px 0px rgba(0,0,0,0.9) inset;-webkit-box-shadow:0px 0px 12px 0px rgba(0,0,0,0.9) inset;-o-box-shadow:0px 0px 12px 0px rgba(0,0,0,0.9) inset;-ms-box-shadow:0px 0px 12px 0px rgba(0,0,0,0.9) inset;-moz-box-shadow:0px 0px 12px 0px rgba(0,0,0,0.9) inset;}
+.tri-bottom{width: 350px;height: 96px;position: absolute;left: 380px;top: -8px;background: url(Dunes_files/images/ft-bt.png) no-repeat;background-size: contain;}
+/* footer starts here --- */
+.footer{}
+.footer-in{padding: 24px 20px 117px 11px;}
+.footer-in nav{float:left;padding: 10px 0 0 0;}
+.footer-left{float:left;padding:16px 0 0 0;}
+.footer-left ul li{float:left;margin: 0  0 0 21px;}
+.footer-left ul li a{font-size:18.75px;line-height: 20px;font-weight:600;color:#821523;text-transform: capitalize;}
+.footer-left a.active{text-decoration:underline;color:#821523;}
+.footer-left a:hover{text-decoration: underline;color:#821523;}
+address{float:right;padding: 10px 0 0 0;}
+address p{font-size:12.5px;line-height: 14px;font-weight:600;}
+address p a{color:#821523;font-size:12.5px;line-height: 14px;display: block;text-align:right;margin:0 3px 0 0;}
+address p a:hover,a:focus{color:#821523;text-decoration: none;}
+#nav-icon1{width: 35px;height: 30px;position: absolute;margin:0;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .5s ease-in-out;-moz-transition: .5s ease-in-out;-o-transition: .5s ease-in-out;transition: .5s ease-in-out;cursor: pointer;top: 50%;display: block;z-index:99999999;right: 20px;display:none;transform: translateY(-50%);-o-transform: translateY(-50%);-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);}
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span{display: block;position: absolute;height: 3px;width: 100%;background: #821523;border-radius: 9px;opacity: 1;left: 0;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .25s ease-in-out;-moz-transition: .25s ease-in-out;-o-transition: .25s ease-in-out;transition: .25s ease-in-out;}
+#nav-icon1 span:nth-child(1){top: 0px;}
+#nav-icon1 span:nth-child(2){top:11px;}
+#nav-icon1 span:nth-child(3){top:22px;}
+.open #nav-icon1 span:nth-child(1){top: 18px;  -webkit-transform: rotate(135deg);  -moz-transform: rotate(135deg);  -o-transform: rotate(135deg);  transform: rotate(135deg);}
+.open #nav-icon1 span:nth-child(2){opacity:0;  left:-60px;}
+.open #nav-icon1 span:nth-child(3){top: 18px; -webkit-transform: rotate(-135deg);  -moz-transform: rotate(-135deg);  -o-transform: rotate(-135deg);  transform: rotate(-135deg);}
+.sidebar{display:none;}
+#nav-icon1{display: none;}
+
+
+
+
+
+
+
+/* -------Don't Remove this---------------*/
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], textarea, button, select {
+    -webkit-appearance: none; /*Safari/Chrome*/
+    -moz-appearance: none; /*Firefox*/
+    -ms-appearance: none; /*IE*/
+    -o-appearance: none; /*Opera*/
+    appearance: none;
+    -webkit-border-radius: 0;
+}
+
+
+
+
+/*
+------- Responsive Styles ------------------
+*/
+
+
+
+@media only screen and (max-width:1240px)
+
+{
+    .container{width:100%;}
+    .header-in{padding:0 10px 0 10px;}
+    nav ul li{margin: 0  0 0 15px;}
+    .logo{left:100px;}
+
+}
+
+
+@media only screen and (max-width:1150px)
+
+{
+    .logo{left:80px;}
+    nav ul li{margin:0 0 0 10px;}
+    .tri-bottom{left:300px;}
+
+}
+
+@media only screen and (max-width:1024px)
+{
+    nav ul li a{font-size:17.75px;line-height: 20px;}
+    .logo{}
+    nav ul li{margin:0 0 0 7px;}
+    .surgical-in p{font-size:13.58px;line-height:20px;}
+    .surgical-blk{padding:0 0 25px 0;}
+    .education{padding:10px 0 0 0;}
+    .surgical-in{padding:10px 0 0 0;}
+    .footer-left ul li{margin:0 0 0 10px;}
+    .shape{background-position: 10% 100%;}
+    .tri-bottom{left:250px;}
+    .footer-in {padding:24px 20px 60px 11px;}
+}
+@media only screen and (max-width:991px)
+    {
+        .logo{left:50px;top:15px;}
+        .tri-bottom{left:70px;}
+            nav{padding:37px 0 31px 0;}
+        .logo a img{width:140px;height:auto;}
+        nav ul li{margin:0 0 0 5px;}
+        nav ul li a{font-size:16px;line-height:20px;}
+        .surgical-main ul > li{padding:0 20px 0 20px;}
+        .footer-left ul li a{font-size:16.75px;}
+        .footer-left ul li{margin:0 0 0 5px;}
+        .banner-cnt{padding:152px 20px 173px 20px;}
+        .shape{background-position: 20% 100%;}
+        .tri-shape{width: 218px;height: 109px;position: absolute;left: 28px;top: -4px;}
+        .banner{border-top:4px solid #b39b7c;}
+        .tri-shape-bt{bottom: -13px;width:1714px;height:103px;}
+        .tri-shape-bt:after{right:94%;margin:-19px 0 0 0;}
+        .tri-shape-bt:before{right:94%;margin:-19px 0 0 0;}
+        .footer-in{padding:24px 4px 117px 11px;}
+        .tri-shape-bt{background-position: 200px top;}
+
+}
+@media only screen and (max-width:775px)
+{
+    .logo{left:30px;}
+}
+
+
+@media only screen and (max-width:767px)
+{
+    .logo{top:7px;left:60px;}
+    .tri-bottom{width:300px;height:88px;top:-7px;}
+    .shape{border-top:7px solid #b39b7c;border-bottom:7px solid #b39b7c;}
+    address p a{text-align: center;}
+
+    .surgical-main ul > li{width:49%;}
+    .main-blk{padding:15px 25px 20px 25px;}
+    .surgical-in h2{font-size:16.83px;line-height:24px;}
+    .surgical-blk{padding:0 0 5px 0;}
+    .education ul{padding:5px 0 0 0;}
+    .education h2{font-size:16.83px;}
+     .surgical-in{padding:5px 0 0 0}
+    .footer-left{float:none;width:100%;display: block;text-align: center;padding:0 0 10px 0;}
+    .footer-in{width:100%;display:block;text-align: center;margin:0 auto;}
+    .footer-left ul li{margin:0 0 0 5px;float:none;display: inline-block;}
+    .banner-cnt p{font-size:13.58px;line-height:16px;}
+    .footer-left ul li a{font-size:14.75px;}
+    address{float:none;display: block;text-align:center;}
+    .footer-in{padding:10px 0 10px 0;}
+     #nav-icon1{display:block;}
+    .sidebar{display:block;width: 250px; background:#fff; position: fixed;  z-index: 999; height:100%; transition:all 0.5s ease-in-out; top:0;right:-250px;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg); transform: rotate(0deg);-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; overflow-y: auto;}
+    .sidebar .login{display:block;}
+    .open .sidebar{ right:0;}
+    .wrapper{position:relative; left:0; transition:all 0.5s ease-in-out; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);  -o-transform: rotate(0deg); transform:  rotate(0deg);  -webkit-transition: .25s ease-in-out;   -moz-transition: .25s ease-in-out;  -o-transition: .25s ease-in-out;}
+    .open .wrapper{left:-250px;}
+    .open .overlay{visibility:visible; opacity:0.6;}
+    .sidebar  li a{font-size: 18.75px;
+    line-height: 45px;
+   font-family:'Source Serif Pro', serif;
+    font-weight: 600;
+    color: #821523;
+    display: block;
+    text-transform: capitalize;
+    text-align: center;}
+    .sidebar  li:hover a{background-color:#821523;}
+    .sidebar  li:hover a{color:#fff;}
+    .sidebar  li {list-style: none;}
+    nav{display: block;}
+    .education p{font-size:12.58px;}
+    .surgical-in .biospy li a{font-size:12.58px;}
+    .education ul li a{font-size:12.58px;}
+    nav ul {display: none;}
+    .eclipse{padding: 0 40px;}
+    .banner-cnt{padding:100px 20px 100px 20px;}
+    .surgical-in p{font-size:12.58px;}
+    .tri-shape-bt{background-position:150px top; width:1443px;height:89px;}
+}
+@media only screen and (max-width:599px)
+{
+    .surgical-main ul > li{width:100%;display: block;text-align:center;}
+    .surgical-in{padding:5px 0 0 0;}
+    .logo a img{width:100px;height:auto;}
+    .footer-left ul li{max-width:100%;display: block;text-align: center;margin:0;}
+    .eclipse{padding:0 60px;}
+    .footer-left ul li a{font-size:12.75px;}
+    .footer-left{padding:0 0 5px 0;}
+    address{padding:5px 0 0 0;}
+    .main-blk{padding: 15px 25px 10px 25px;}
+    .education{padding:5px 0 0 0;}
+    .education h2{font-size:15.83px;}
+    .shape{background-position: 25% 100%;}
+    .eclipse figure img{width:200px;height:auto;}
+    .surgical-in p{font-size:12.58px;}
+    .banner-cnt{padding:80px 20px 80px 20px;}
+    .banner-cnt p{font-size:12.58px;}
+    .logo a img{width:100px;height:auto;}
+    .tri-bottom{left:50px;}
+    .logo{top:30px;left:90px;}
+    .tri-shape-bt{width:1323px;height:81px;}
+}
+@media only screen and (max-width:479px){
+    .tri-bottom{width:200px;top:-5px;}
+    .shape{border-top:5px solid #b39b7c;border-bottom:5px solid #b39b7c;}
+    .tri-shape-bt {
+    width: 975px;
+    height: 61px;
+  }
+}

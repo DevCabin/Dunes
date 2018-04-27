@@ -1,0 +1,156 @@
+
+
+
+@media only screen and (max-width:1240px)
+
+{
+    .container{width:100%;}
+    .header-in{padding:0 10px 0 10px;}
+    nav ul li{margin: 0  0 0 15px;}
+    .logo{left:100px;}
+
+}
+
+
+@media only screen and (max-width:1150px)
+    
+{
+    .logo{left:80px;}
+    nav ul li{margin:0 0 0 10px;}
+    .tri-bottom{left:300px;}
+ 
+}
+
+@media only screen and (max-width:1024px)
+{
+    nav ul li a{font-size:17.75px;line-height: 20px;}
+    .logo{}
+    nav ul li{margin:0 0 0 7px;}
+    .surgical-in p{font-size:13.58px;line-height:20px;}
+    .surgical-blk{padding:0 0 25px 0;}
+    .education{padding:10px 0 0 0;}
+    .surgical-in{padding:10px 0 0 0;}
+    .footer-left ul li{margin:0 0 0 10px;}
+    .shape{background-position: 10% 100%;}
+    .tri-bottom{left:250px;}
+    .footer-in {padding:24px 20px 60px 11px;}
+}
+@media only screen and (max-width:991px)
+    {
+        .logo{left:50px;top:15px;}
+        .tri-bottom{left:70px;}
+            nav{padding:37px 0 31px 0;}
+        .logo a img{width:140px;height:auto;}
+        nav ul li{margin:0 0 0 5px;}
+        nav ul li a{font-size:16px;line-height:20px;}
+        .surgical-main ul > li{padding:0 20px 0 20px;}
+        .footer-left ul li a{font-size:16.75px;}
+        .footer-left ul li{margin:0 0 0 5px;}
+        .banner-cnt{padding:152px 20px 173px 20px;}
+        .shape{background-position: 20% 100%;}
+        .tri-shape{width: 218px;height: 109px;position: absolute;left: 28px;top: -4px;}
+        .banner{border-top:4px solid #b39b7c;}
+        .tri-shape-bt{bottom: -13px;width:1714px;height:103px;}
+        .tri-shape-bt:after{right:94%;margin:-19px 0 0 0;}
+        .tri-shape-bt:before{right:94%;margin:-19px 0 0 0;}
+        .footer-in{padding:24px 4px 117px 11px;}
+        .tri-shape-bt{background-position: 200px top;}
+
+}
+@media only screen and (max-width:775px)
+{
+    .logo{left:30px;}
+}
+
+
+@media only screen and (max-width:767px)
+{
+    .logo{top:7px;left:60px;}
+    .tri-bottom{width:300px;height:88px;top:-7px;}
+    .shape{border-top:7px solid #b39b7c;border-bottom:7px solid #b39b7c;}
+    address p a{text-align: center;}
+
+    .surgical-main ul > li{width:49%;}
+    .main-blk{padding:15px 25px 20px 25px;}
+    .surgical-in h2{font-size:16.83px;line-height:24px;}
+    .surgical-blk{padding:0 0 5px 0;}
+    .education ul{padding:5px 0 0 0;}
+    .education h2{font-size:16.83px;}
+     .surgical-in{padding:5px 0 0 0}
+    .footer-left{float:none;width:100%;display: block;text-align: center;padding:0 0 10px 0;}
+    .footer-in{width:100%;display:block;text-align: center;margin:0 auto;}
+    .footer-left ul li{margin:0 0 0 5px;float:none;display: inline-block;}
+    .banner-cnt p{font-size:13.58px;line-height:16px;}
+    .footer-left ul li a{font-size:14.75px;}
+    address{float:none;display: block;text-align:center;}
+    .footer-in{padding:10px 0 10px 0;}
+     #nav-icon1{display:block;}
+    .sidebar{display:block;width: 250px; background:#fff; position: fixed;  z-index: 999; height:100%; transition:all 0.5s ease-in-out; top:0;right:-250px;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg); transform: rotate(0deg);-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; overflow-y: auto;}
+    .sidebar .login{display:block;}
+    .open .sidebar{ right:0;}
+    .wrapper{position:relative; left:0; transition:all 0.5s ease-in-out; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);  -o-transform: rotate(0deg); transform:  rotate(0deg);  -webkit-transition: .25s ease-in-out;   -moz-transition: .25s ease-in-out;  -o-transition: .25s ease-in-out;}
+    .open .wrapper{left:-250px;}
+    .open .overlay{visibility:visible; opacity:0.6;}
+    .sidebar  li a{font-size: 18.75px;
+    line-height: 45px;
+   font-family:'Source Serif Pro', serif;
+    font-weight: 600;
+    color: #821523;
+    display: block;
+    text-transform: capitalize;
+    text-align: center;}
+    .sidebar  li:hover a{background-color:#821523;}
+    .sidebar  li:hover a{color:#fff;}
+    .sidebar  li {list-style: none;}
+    nav{display: block;}
+    .education p{font-size:12.58px;}
+    .surgical-in .biospy li a{font-size:12.58px;}
+    .education ul li a{font-size:12.58px;}
+    nav ul {display: none;}
+    .eclipse{padding: 0 40px;}
+    .banner-cnt{padding:100px 20px 100px 20px;}
+    .surgical-in p{font-size:12.58px;}
+    .tri-shape-bt{background-position:150px top; width:1443px;height:89px;}
+}
+@media only screen and (max-width:599px)
+{
+    .surgical-main ul > li{width:100%;display: block;text-align:center;}
+    .surgical-in{padding:5px 0 0 0;}
+    .logo a img{width:100px;height:auto;}
+    .footer-left ul li{max-width:100%;display: block;text-align: center;margin:0;}
+    .eclipse{padding:0 60px;}
+    .footer-left ul li a{font-size:12.75px;}
+    .footer-left{padding:0 0 5px 0;}
+    address{padding:5px 0 0 0;}
+    .main-blk{padding: 15px 25px 10px 25px;}
+    .education{padding:5px 0 0 0;}
+    .education h2{font-size:15.83px;}
+    .shape{background-position: 25% 100%;}
+    .eclipse figure img{width:200px;height:auto;}
+    .surgical-in p{font-size:12.58px;}
+    .banner-cnt{padding:80px 20px 80px 20px;}
+    .banner-cnt p{font-size:12.58px;}
+    .logo a img{width:100px;height:auto;}
+    .tri-bottom{left:50px;}
+    .logo{top:30px;left:90px;}
+    .tri-shape-bt{width:1323px;height:81px;}
+}
+@media only screen and (max-width:479px)
+{
+   
+    .tri-bottom{width:200px;top:-5px;}
+    .shape{border-top:5px solid #b39b7c;border-bottom:5px solid #b39b7c;}
+    .tri-shape-bt {
+    width: 975px;
+    height: 61px;
+}
+    }
+    
+
+
+
+
+
+
+
