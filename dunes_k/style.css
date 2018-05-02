@@ -290,11 +290,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #ad9371; }
   a:visited {
-    color: purple; }
+    color: #ad9371; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #fce255; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -648,12 +648,12 @@ header, nav, section, article, aside, footer, hgroup, figure {
 
 /**************************************************************************************/
 a {
-  color: #000;
+  color: #ad9371;
   text-decoration: none;
   outline: 0 none !important; }
 
 a:hover, a:focus {
-  color: #000;
+  color: #fce255;
   text-decoration: none;
   outline: 0 none !important; }
 
@@ -1380,6 +1380,9 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 $size__site-main: 790px;
 $size__site-sidebar: 370px;
 */
+nav ul li a {
+  color: #821523 !important; }
+
 .banner {
   border-top: 8px solid #b39b7c;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
@@ -1391,6 +1394,7 @@ $size__site-sidebar: 370px;
 .img-bg {
   background: url(Dunes_files/images/banner.jpg) no-repeat top center;
   background-size: cover;
+  background-color: #770e17;
   max-width: 100%;
   height: auto;
   display: block;
@@ -1401,24 +1405,25 @@ $size__site-sidebar: 370px;
   -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
   -ms-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
-  position: relative; }
+  position: relative;
+  border-bottom: 7px solid #b39b7c; }
 
 .tri-shape {
   width: 376px;
   height: 96px;
   position: relative;
   left: -385px;
-  top: -123px;
+  top: -8px;
   background: url(Dunes_files/images/tr-shapetop.png) no-repeat;
   background-size: initial;
   z-index: 1;
   display: block; }
 
-.home .tri-shape, .our-services .tri-shape {
+.home .tri-shape, .post-type-archive-services .tri-shape {
   width: 376px;
   height: 96px;
   position: absolute;
-  left: 25px;
+  left: 0;
   top: -8px;
   background: url(Dunes_files/images/tr-shapetop.png) no-repeat;
   background-size: contain; }
@@ -1426,12 +1431,96 @@ $size__site-sidebar: 370px;
 .img-bg p {
   color: white; }
 
+a.btn, a.button, input[type="submit"] {
+  font-size: 24px;
+  color: white;
+  padding: 6px 46px;
+  border-radius: 4px;
+  background-color: #ad9371;
+  -webkit-box-shadow: inset 0px -2px 4px 0px #333;
+          box-shadow: inset 0px -2px 4px 0px #333; }
+
+a.btn:hover, a.button:hover {
+  font-weight: bold;
+  padding: 6px 44px; }
+
 #primary {
   width: 790px;
-  float: right;
-  padding-top: 115px; }
+  float: right; }
 
 #secondary {
   width: 370px;
   float: left;
-  padding-top: 115px; }
+  padding-top: 115px;
+  text-align: center; }
+  #secondary h2, #secondary h3, #secondary p, #secondary a, #secondary li {
+    color: white; }
+  #secondary p {
+    line-height: 1.5em;
+    padding: 0 12px; }
+  #secondary .widget_recent_entries li a {
+    color: #ad9371;
+    font-size: 14px; }
+
+.blog #main > article {
+  margin-top: 0px; }
+
+h1.entry-title {
+  font-family: serif; }
+
+.blog article, .archive article {
+  width: 45%;
+  float: left;
+  display: inline-block;
+  margin: 12px; }
+
+h2.entry-title {
+  font-family: serif; }
+
+@media all and (min-width: 1200px) {
+  .img-bg {
+    min-height: 700px; }
+  #content .container {
+    position: relative;
+    left: 20px; }
+  #content .container .tri-shape {
+    left: -412px; }
+  .home #content .tri-shape, .post-type-archive-services #content .tri-shape {
+    left: 0; }
+  .single #secondary img {
+    margin-bottom: 100px; } }
+
+@media all and (max-width: 1200px) {
+  .logo a img {
+    width: 100px; }
+  #content {
+    padding-top: 75px; }
+  #primary, #secondary {
+    padding: 0 2%; }
+  span.tri-shape {
+    display: none; }
+  #primary {
+    padding-top: 0; }
+  #main > article {
+    margin-top: 0; }
+  .single #secondary img {
+    margin-bottom: 50px; } }
+
+@media all and (min-width: 769px) and (max-width: 1200px) {
+  #primary {
+    width: 60%; }
+  #secondary {
+    width: 32%; } }
+
+@media all and (max-width: 768px) {
+  #primary {
+    width: 100%; }
+  #secondary {
+    width: 100%; } }
+
+@media all and (max-width: 599px) {
+  .logo {
+    top: 6px;
+    left: 12px; }
+  .blog article, .archive article {
+    width: 92%; } }

@@ -18,8 +18,6 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-
-
 					 <span class="tri-shape"></span>
 
 					 <?php

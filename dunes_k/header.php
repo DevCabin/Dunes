@@ -104,8 +104,8 @@
 		            </div>
 		         </header>
 
-			<div id="content" class="site-content <?php if(!is_page('our-services') && !is_front_page()){ ?>img-bg<?php } ?>">
-				<?php if(!is_page('our-services') && !is_front_page()){ ?>
+			<div id="content" class="site-content <?php if(!is_page('our-services') && !is_front_page() && ! is_post_type_archive('services')){ ?>img-bg<?php } ?>">
+				<?php if(!is_page('our-services') && !is_front_page() && ! is_post_type_archive('services')){ ?>
 					<div class="container">
 				<?php } ?>
 			<!-- END HEADER.PHP -->

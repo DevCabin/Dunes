@@ -36,15 +36,26 @@
 </html>
 
 */ ?>
-<?php if(!is_page('our-services') && !is_front_page()){ ?>
+
+
+<!-- FOOTER.PHP -->
+
+<?php if(!is_page('our-services') && !is_front_page() && ! is_post_type_archive('services')){ ?>
 </div><!-- container -->
 <?php } ?>
 </div><!-- #content -->
 
-<!-- FOOTER.PHP -->
-<div class="shape">
-	 <span class="tri-bottom"></span>
-</div>
+
+
+
+<?php if (is_page('our-services') || is_front_page() || is_post_type_archive('services')) { ?>
+	<div class="shape">
+	 	<span class="tri-bottom"></span>
+	</div>
+<?php } ?>
+
+
+
 <div class="footer">
 	 <div class="container">
 			<div class="footer-in">

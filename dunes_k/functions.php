@@ -105,12 +105,48 @@ add_action( 'after_setup_theme', 'dunes_k_content_width', 0 );
  */
 function dunes_k_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'dunes_k' ),
+		'name'          => esc_html__( 'Default Sidebar', 'dunes_k' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'dunes_k' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
+		'before_title'  => '<h2 class="widget-title" style="display:none;">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Blog Sidebar', 'dunes_k' ),
+		'id'            => 'sidebar-blog',
+		'description'   => esc_html__( 'Add widgets here.', 'dunes_k' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title" style="display:none;">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Contact', 'dunes_k' ),
+		'id'            => 'sidebar-contact',
+		'description'   => esc_html__( 'Add widgets here.', 'dunes_k' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title" style="display:none;">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'FAQ', 'dunes_k' ),
+		'id'            => 'sidebar-faq',
+		'description'   => esc_html__( 'Add widgets here.', 'dunes_k' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title" style="display:none;">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Patient Info', 'dunes_k' ),
+		'id'            => 'sidebar-patient-info',
+		'description'   => esc_html__( 'Add widgets here.', 'dunes_k' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title" style="display:none;">',
 		'after_title'   => '</h2>',
 	) );
 }
@@ -131,6 +167,32 @@ function dunes_k_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'dunes_k_scripts' );
+
+
+
+/**
+ * Replaces "[...]" (appended to automatically generated excerpts) with ... and
+ * a 'Continue reading' link.
+ *
+ * @since Twenty Seventeen 1.0
+ *
+ * @param string $link Link to single post/page.
+ * @return string 'Continue reading' link prepended with an ellipsis.
+ */
+function twentyseventeen_excerpt_more( $link ) {
+	if ( is_admin() ) {
+		return $link;
+	}
+
+	$link = sprintf(
+		'<span class="link-more"><a href="%1$s" class="more-link">%2$s</a></span>',
+		esc_url( get_permalink( get_the_ID() ) ),
+		/* translators: %s: Name of current post */
+		sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ), get_the_title( get_the_ID() ) )
+	);
+	return ' &hellip; ' . $link;
+}
+add_filter( 'excerpt_more', 'twentyseventeen_excerpt_more' );
 
 /**
  * Implement the Custom Header feature.
@@ -158,4 +220,5 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
+/** Theme options via Redux **/
+require get_template_directory() . '/admin/admin-init.php';

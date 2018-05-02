@@ -4,6 +4,10 @@ $size__site-main: 790px;
 $size__site-sidebar: 370px;
 */
 
+nav ul li a {
+	color: $red2 !important;
+}
+
 .banner {
 	border-top: 8px solid #b39b7c;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
@@ -16,6 +20,7 @@ $size__site-sidebar: 370px;
 .img-bg {
 	background: url(Dunes_files/images/banner.jpg) no-repeat top center;
 	background-size: cover;
+	background-color: $red;
 	max-width: 100%;
 	height: auto;
 	display: block;
@@ -27,41 +32,164 @@ $size__site-sidebar: 370px;
 	-webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
 	-ms-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.9) inset;
 	position: relative;
+		border-bottom: 7px solid #b39b7c;
 }
+
 .tri-shape {
 	width: 376px;
 	height: 96px;
 	position: relative;
 	left: -385px;
-	top: -123px;
+	//top: -123px;
+	top: -8px;
 	background: url(Dunes_files/images/tr-shapetop.png) no-repeat;
 	background-size: initial;
 	z-index: 1;
 	display: block;
 }
-.home .tri-shape, .our-services .tri-shape {
+.home .tri-shape, .post-type-archive-services .tri-shape {
   width: 376px;
 	height: 96px;
 	position: absolute;
-	left: 25px;
+	left: 0;
 	top: -8px;
 	background: url(Dunes_files/images/tr-shapetop.png) no-repeat;
 	background-size: contain;
 }
 
-
-
 .img-bg p {
   color : white;
+}
+a.btn, a.button, input[type="submit"] {
+	font-size: 24px;
+	color: white;
+	padding: 6px 46px;
+	border-radius: 4px;
+	background-color: $brown;
+	box-shadow: inset 0px -2px 4px 0px #333
+}
+a.btn:hover, a.button:hover {
+	font-weight: bold;
+	padding: 6px 44px;
 }
 
 #primary {
   width: $size__site-main;
   float: right;
-  padding-top: 115px;
+  //padding-top: 115px;
 }
 #secondary {
   width: $size__site-sidebar;
   float: left;
   padding-top: 115px;
+	text-align: center;
+	h2, h3, p, a, li {
+		color: white;
+	}
+	p {
+		line-height: 1.5em;
+		padding: 0 12px;
+
+	}
+	.widget_recent_entries li  a{
+		color: $brown;
+		font-size: 14px;
+	}
+}
+
+#main > article {
+	//margin-top: -115px;
+}
+.blog #main > article, {
+	margin-top: 0px;
+}
+h1.entry-title {
+	font-family: serif;
+}
+
+.blog article, .archive article {
+	width: 45%;
+	float: left;
+	display: inline-block;
+	margin: 12px;
+}
+h2.entry-title {
+	font-family: serif;
+}
+
+@media all and (min-width:1200px) {
+	.img-bg {
+		min-height: 700px;
+	}
+	#content .container {
+		position: relative;
+		left: 20px;
+	}
+	#content .container .tri-shape {
+		left: -412px;
+	}
+	.home #content .tri-shape, .post-type-archive-services #content .tri-shape {
+		left: 0;
+	}
+	.single {
+
+		#secondary img {
+			margin-bottom: 100px;
+		}
+	}
+}
+
+@media all and (max-width:1200px) {
+		.logo a img {
+			width: 100px;
+		}
+		#content {
+			padding-top: 75px;
+		}
+		#primary, #secondary {
+			padding: 0 2%;
+		}
+		span.tri-shape {
+			display: none;
+		}
+		#primary {
+		  padding-top: 0;
+		}
+		#main > article {
+			margin-top: 0;
+		}
+		.single {
+			#secondary img {
+				margin-bottom: 50px;
+			}
+		}
+}
+
+@media all and (min-width: 769px) and (max-width: 1200px) {
+	#primary {
+		width: 60%;
+	}
+	#secondary {
+		width: 32%;
+	}
+}
+
+@media all and (max-width:768px) {
+	#primary {
+		width: 100%;
+	}
+	#secondary {
+		width: 100%;
+	}
+
+
+}
+@media all and (max-width:599px) {
+	.logo {
+		top: 6px;
+		left: 12px;
+	}
+	.blog article, .archive article {
+		width: 92%;
+	}
 }
